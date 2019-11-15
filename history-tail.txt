@@ -1,0 +1,35 @@
+  471  git init git-repo-aplana-test
+  472  cd git-repo-aplana-test/
+  473  touch Potter.txt
+  475  vim Potter.txt 
+  477  git status
+  478  git add Potter.txt 
+  479  git status
+  480  git commit -m "create file with info Potter"
+  481  git status
+  490  git push --set-upstream https://github.com/medoedmedoed/git-repo-aplana-test.git master 
+  491  git branch feature
+  492  git checkout feature 
+  494  git status
+  495  vim Potter.txt 
+  496  git status 
+  498  git commit -a -m "change name book"
+  499  git status
+  502  git push https://github.com/medoedmedoed/git-repo-aplana-test feature
+  503  git log
+  504  git checkout master
+  505  git branch 
+  507  vim Potter.txt 
+  508  git status 
+  509  git commit -a -m "chanche file name book on branch MASTER"
+  510  git push https://github.com/medoedmedoed/git-repo-aplana-test master 
+  512  git checkout feature 
+  514  git merge master
+  515  vim Potter.txt 
+  516  git status 
+  517  git commit -a -m "commit master om feature"
+  519  vim Potter.txt 
+  520  git push https://github.com/medoedmedoed/git-repo-aplana-test feature 
+  521  git checkout master 
+  522  git merge feature 
+  523  git log
